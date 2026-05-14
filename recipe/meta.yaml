@@ -1,4 +1,4 @@
-{% set version = "1.0.2" %}
+{% set version = "1.0.4" %}
 {% set posix = 'm2-' if win else '' %}
 
 package:
@@ -9,10 +9,10 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/lotri_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/lotri/lotri_{{ version }}.tar.gz
-  sha256: e3eea1b79f403471dcdb827ca46b80689c2ca586cc7f90f5613881a4ab8296eb
+  sha256: 33a7b2814fb664dbcc70b999b77edb70d80ab36af6ffa3b8555cbcbe482b9e63
 
 build:
-  number: 1
+  number: 0
   rpaths:
     - lib/R/lib/
     - lib/
